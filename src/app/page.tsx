@@ -8,7 +8,7 @@ export default function Home() {
   const [error, setError] = useState("");
 
   // Form submission handler
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Basic validation
