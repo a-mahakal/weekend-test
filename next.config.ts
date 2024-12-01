@@ -6,4 +6,4 @@ const nextConfig: NextConfig = {
   assetPrefix: '/weekend-test/', // Prefix for assets
 };
 
-export default nextConfig;
+module.exports = nextConfig
