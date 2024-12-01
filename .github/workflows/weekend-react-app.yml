@@ -24,7 +24,7 @@ jobs:
     - name: Build React App
       run: npm run build
 
-    # - name: Deploy to GitHub Pages
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.ANURAG_GITHUB_TOKEN }}
-    #   run: npm run deploy
+    - name: Deploy to GitHub Pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.ANURAG_GITHUB_TOKEN }}
+      run: npm run deploy
