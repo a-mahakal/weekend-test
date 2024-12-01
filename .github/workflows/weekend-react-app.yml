@@ -1,9 +1,7 @@
 name: Deploying weekend app
 
 on:
-  push:
-    branches:
-      - master  # Replace with the branch you want to deploy from
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -11,7 +9,9 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@4.2.2
+      uses: actions/checkout@4
+      with:
+        ref: "master"
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
